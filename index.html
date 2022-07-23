@@ -12,7 +12,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body{
+        body {
             background: #200070;
         }
     </style>
@@ -23,19 +23,24 @@
     <div class="container text-light">
         <h1 class="text-center">Rock Scissor Paper</h1>
         <div class="row my-3">
-            <button class="col btn btn-success p-5 rounded-circle">
+            <button class="col btn btn-success p-5 rounded-circle" id="rock">
                 <i class="fa-solid fa-hand-back-fist fa-3x"></i>
             </button>
-            <button class="col btn btn-success p-5 rounded-circle">
+            <button class="col btn btn-success p-5 rounded-circle" id="scissor">
                 <i class="fa-solid fa-hand-scissors fa-3x"></i>
             </button>
-            <button class="col btn btn-success p-5 rounded-circle">
+            <button class="col btn btn-success p-5 rounded-circle" id="paper">
                 <i class="fa-solid fa-hand fa-3x"></i>
             </button>
         </div>
         <div class="fs-2 text-center result"></div>
+        <form action="">
+            <div class="d-grid">
+                <button class="btn btn-primary d-none" id="refresh" type="submit"><i
+                        class="fa-solid fa-arrow-rotate-right fa-3x"></i></button>
+            </div>
+        </form>
     </div>
-
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
